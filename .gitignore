@@ -1,0 +1,6 @@
+*.pyc
+.DS_Store
+db/
+__pycache__/
+celerybeat-schedule
+supervisord.log
