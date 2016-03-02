@@ -10,10 +10,10 @@ class Recipe(ServiceObjectType):
 
     ingredients = Connection('Ingredient')
 
+
 class Ingredient(ServiceObjectType):
     class Meta:
         service = IngredientService
-
 
 
 class Query(ObjectType):
