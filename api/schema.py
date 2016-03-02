@@ -3,16 +3,18 @@ from nautilus.api import ServiceObjectType, Connection
 from recipeBook.recipe import service as RecipeService
 from recipeBook.ingredient import service as IngredientService
 
-class Ingredient(ServiceObjectType):
-    class Meta:
-        service = IngredientService
-
 
 class Recipe(ServiceObjectType):
     class Meta:
         service = RecipeService
 
-    ingredients = Connection(Ingredient)
+    ingredients = Connection('Ingredient')
+
+class Ingredient(ServiceObjectType):
+    class Meta:
+        service = IngredientService
+
+
 
 class Query(ObjectType):
     ingredients = Connection(Ingredient)
