@@ -1,7 +1,7 @@
 # third party imports
 from nautilus import ModelService
 # third party imports
-from sqlalchemy import Column, Text
+from sqlalchemy import Column, Text, Integer
 from nautilus.models import HasID, BaseModel, CRUDNotificationCreator
 
 class Ingredient(CRUDNotificationCreator, HasID, BaseModel):
