@@ -2,6 +2,7 @@
 
 # third party imports
 from nautilus import ServiceManager
+
 # local imports
 from server import service
 
