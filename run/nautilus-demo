@@ -1,7 +1,5 @@
 #!/bin/bash
 
-cd /nautilus/nautilus-examples/recipe_book/server/run
-
 ./run_api.sh > api.log 2>&1 &
 ./run_recipe.sh > recipe.log 2>&1 &
 ./run_ingredient.sh > ingredient.log 2>&1 &

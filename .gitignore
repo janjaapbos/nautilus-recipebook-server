@@ -6,3 +6,4 @@ celerybeat-schedule
 supervisord.log
 /run/env
 schema.json
+*.log
