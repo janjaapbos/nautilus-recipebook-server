@@ -4,3 +4,5 @@ db/
 __pycache__/
 celerybeat-schedule
 supervisord.log
+/run/env
+schema.json
