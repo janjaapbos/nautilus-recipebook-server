@@ -1,6 +1,9 @@
 #!/bin/bash
 
-source ./env
+source ./env || {
+  echo "Please copy env.template to env"
+  exit
+}
 
 test -f /tmp/recipe.db || {
    python3 ../recipe_book/recipe/manage.py syncdb
